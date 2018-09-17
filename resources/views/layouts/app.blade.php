@@ -30,16 +30,21 @@
                 </a>
                 <!-- Right Side Of Navbar -->
                 <ul class="navbar-nav ml-auto">
-                    <a href="">Contacten</a>
-                    <a href="{{ route('logout') }}"
-                       onclick="event.preventDefault();
-                                     document.getElementById('logout-form').submit();">
-                        {{ __('Logout') }}
-                    </a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Contacten</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('logout') }}"
+                           onclick="event.preventDefault();
+                                         document.getElementById('logout-form').submit();">
+                            {{ __('Logout') }}
+                        </a>
 
-                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                        @csrf
-                    </form>
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                            @csrf
+                        </form>
+                    </li>
+                    
                 </ul>
             </div>
         </nav>
