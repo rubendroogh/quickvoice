@@ -19,9 +19,9 @@
                 <div class="form-group">
                     <label for="messageInput">Telefoon nummer</label>
                     <input type="text" class="form-control" name="phone_number">
-                    <small class="form-text text-muted">Telefoonnummer in het volgende formaat: .</small>
+                    <small class="form-text text-muted">Voeg het nummer toe in een reeks getallen, zonder de + voor de landcode. (bijv. 31655443322)</small>
                 </div>
-                <button type="submit" class="btn btn-primary">Verstuur</button>
+                <button type="submit" class="btn btn-primary">Opslaan</button>
             </form>
         </div>
     </div>

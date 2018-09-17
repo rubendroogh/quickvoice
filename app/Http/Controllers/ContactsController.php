@@ -20,4 +20,10 @@ class ContactsController extends Controller
     public function newContact(){
     	return view('newContact');
     }
+
+    public function newContactPost(Request $request){
+        Contact::create(['name' => $request->name, 'phone_number' => $request->phone_number]);
+        $contacts = Contact::all();
+        return view('contacts', ['contacts' => $contacts]);
+    }
 }
