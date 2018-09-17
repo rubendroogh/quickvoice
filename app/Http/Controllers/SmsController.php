@@ -10,7 +10,7 @@ class SmsController extends Controller
 {
 	public function __construct()
     {
-        $this->middleware('guest');
+        $this->middleware('auth');
     }
     
     public function SendSMS(Request $request){
