@@ -31,6 +31,9 @@
                 <!-- Right Side Of Navbar -->
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
+                        <a class="nav-link" href="{{ route('home') }}">Bericht sturen</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="{{ route('listContacts') }}">Contacten</a>
                     </li>
                     <li class="nav-item">
