@@ -11,9 +11,13 @@ class ContactsController extends Controller
     {
         $this->middleware('auth');
     }
-    
+
     public function listContacts(){
     	$contacts = Contact::all();
     	return view('contacts', ['contacts' => $contacts]);
+    }
+
+    public function newContact(){
+    	return view('newContact');
     }
 }

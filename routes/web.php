@@ -19,5 +19,6 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/contacts', 'ContactsController@listContacts')->name('listContacts');
+Route::get('/contacts', 'ContactsController@newContact')->name('newContact');
 
 Route::post('/sendsms', 'SmsController@SendSMS')->name('sendSMS');

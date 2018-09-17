@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-12">
-            <h1>Contacts</h1>
+            <h1>Contacten</h1>
         </div>
     </div>
     <div class="row justify-content-center">
@@ -25,6 +25,13 @@
 							<td></td>
 	    				</tr>
     				@endforeach
+    				<tr>
+    					<td>
+    						<a href="{{ Route('newContact') }}">+ Voeg nieuw contact toe...</a>
+    					</td>
+    					<td></td>
+    					<td></td>
+    				</tr>
   				</tbody>
 			</table>
         </div>
